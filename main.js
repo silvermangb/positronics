@@ -31,7 +31,9 @@ var account = require('account');
 //console.log(1+system.get_location_ticket_items_url('l0','t0'));
 //console.log(1+system.get_location_ticket_item_id_url('l0','t0','i0'));
 
+
 console.log(system.get_location_ticket({'{location_id}':'l0','{ticket_id}':'t0',items:true,'{ticket_item_id}':'tii'}));
+console.log(system.get_location_ticket(system.gen_ticket_args('l0','t0')));
 
 
 
