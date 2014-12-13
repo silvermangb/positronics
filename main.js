@@ -32,9 +32,24 @@ var account = require('account');
 //console.log(1+system.get_location_ticket_item_id_url('l0','t0','i0'));
 
 
-console.log(system.get_location_ticket({'{location_id}':'l0','{ticket_id}':'t0',items:true,'{ticket_item_id}':'tii'}));
+var location_id = system.location_id;
+var ticket_id = system.ticket_id;
+var ticket_item_id = system.ticket_item_id;
+
+console.log(system.get_location_ticket({location_id:'l0',ticket_id:'t0',items:true,ticket_item_id:'tii'}));
 console.log(system.get_location_ticket(system.gen_ticket_args('l0','t0')));
 
+var args = system.gen_ticket_args('l0');
 
 
-console.log('exit');
+console.log(system.get_location_ticket(args));
+delete args.items;
+for(var i=0;i<8;++i) {
+	var t = 't'+i;
+	args[ticket_id] = t;
+	console.log(system.get_location_ticket(args));
+}
+
+
+
+
