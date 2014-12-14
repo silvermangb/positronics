@@ -54,5 +54,9 @@ for(var i=0;i<8;++i) {
 args.items = true;
 console.log(system.get_location_ticket_url(args));
 
+console.log(system.get_location_tables_url('l0'));
+console.log(system.get_location_table_url(system.gen_table_args('l0','t0')));
+
+
 
 
