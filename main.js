@@ -26,6 +26,12 @@ console.log(system.get_location_ticket_url({location_id:'l0',ticket_id:'t0',item
 console.log(system.get_location_ticket_url(system.gen_ticket_args('l0','t0')));
 
 var args = system.gen_ticket_args('l0');
+args.ticket_id = 't0';
+args.ticket_item_id = 'tti';
+args.items = true;
+args.modifiers = true;
+args.modifier_id = 'mi';
+console.log(system.get_location_ticket_url(args));
 
 try
 {
@@ -37,6 +43,9 @@ catch(e)
 }
 
 delete args.items;
+delete args.ticket_item_id;
+delete args.modifiers;
+delete args.modifier_id;
 for(var i=0;i<8;++i) {
 	var t = 't'+i;
 	args.ticket_id = t;
