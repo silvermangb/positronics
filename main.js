@@ -84,16 +84,25 @@ args.modifier_group_id ='mgi';
 console.log(system.get_location_menu_url(args));
 
 
-args = system.gen_menu_args('l0','modifiers');
+args = system.gen_menu_args('l0',system.modifiers);
 console.log(system.get_location_menu_url(args));
 args.modifier_id = 'mi';
 console.log(system.get_location_menu_url(args));
 
 
-args = system.gen_menu_args('l0','categories');
+args = system.gen_menu_args('l0',system.categories);
 console.log(system.get_location_menu_url(args));
 args.category_id = 'ci';
 console.log(system.get_location_menu_url(args));
+
+try
+{
+	system.gen_menu_args('l0','nonsuch');
+}
+catch(e)
+{
+	console.log(e);
+}
 
 
 
