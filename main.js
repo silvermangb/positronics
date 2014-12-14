@@ -82,6 +82,11 @@ args.modifier_groups = true;
 console.log(system.get_location_menu_url(args));
 args.modifier_group_id ='mgi';
 console.log(system.get_location_menu_url(args));
+args = system.gen_menu_args('l0','modifiers');
+console.log(system.get_location_menu_url(args));
+args.modifier_id = 'mi';
+console.log(system.get_location_menu_url(args));
+
 
 
 
