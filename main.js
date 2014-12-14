@@ -64,7 +64,15 @@ console.log(system.get_location_order_types_url('l0'));
 console.log(system.get_location_order_type_url(system.gen_order_type_args('l0','o0')));
 
 console.log(system.get_location_tender_types_url('l0'));
-console.log(system.get_location_tender_type_url(system.gen_tender_type_args('l0','o0')));
+console.log(system.get_location_tender_type_url(system.gen_tender_type_args('l0','tt0')));
+
+console.log(system.get_location_revenue_centers_url('l0'));
+console.log(system.get_location_revenue_center_url(system.gen_revenue_center_args('l0','rc0')));
+
+console.log(system.get_location_payments_url('l0'));
+console.log(system.get_location_payment_url(system.gen_payment_id_args('l0','p0')));
+
+
 
 
 
