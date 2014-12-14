@@ -72,6 +72,12 @@ console.log(system.get_location_revenue_center_url(system.gen_revenue_center_arg
 console.log(system.get_location_payments_url('l0'));
 console.log(system.get_location_payment_url(system.gen_payment_id_args('l0','p0')));
 
+console.log(system.get_location_menu_url('l0'));
+args = system.gen_menu_args('l0');
+args = system.gen_menu_args('l0','items');
+console.log(system.get_location_menu_url(args));
+args.menu_item_id = 'mii';
+console.log(system.get_location_menu_url(args));
 
 
 
