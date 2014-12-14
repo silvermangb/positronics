@@ -58,5 +58,10 @@ console.log(system.get_location_tables_url('l0'));
 console.log(system.get_location_table_url(system.gen_table_args('l0','t0')));
 
 
+console.log(system.get_location_employees_url('l0'));
+console.log(system.get_location_employee_url(system.gen_employee_args('l0','t0')));
+
+
+
 
 
