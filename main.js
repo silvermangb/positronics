@@ -21,7 +21,7 @@ var assert = require('assert');
 
 
 
-
+console.log(system.get_location_tickets_url('lo'));
 console.log(system.get_location_ticket_url({location_id:'l0',ticket_id:'t0',items:true,ticket_item_id:'tii'}));
 console.log(system.get_location_ticket_url(system.gen_ticket_args('l0','t0')));
 
